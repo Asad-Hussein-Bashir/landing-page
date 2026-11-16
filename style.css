@@ -1,9 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 :root {
   --dark-bg: #1f2937;
   --hero-text: #f9faf8;
   --section-padding: 5rem;
   --btn-bg: #3882f6;
   --btn-text: #1f2937;
+  --quote-bg: #e5e7eb;
+  --quote-text: #1f2937;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
 }
 
 * {
@@ -44,7 +52,8 @@ header {
 }
 
 .hero,
-.information {
+.information,
+.quote {
   padding: var(--section-padding);
 }
 
@@ -63,7 +72,8 @@ header {
 
   .hero_content {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
     justify-content: space-between;
 
     hgroup {
@@ -108,4 +118,12 @@ header {
   article {
     text-align: center;
   }
+}
+
+.quote {
+  font-size: 36px;
+  background-color: var(--quote-bg);
+  color: var(--quote-text);
+  font-weight: 300;
+  font-style: italic;
 }
