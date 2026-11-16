@@ -127,6 +127,11 @@ header {
   color: var(--quote-text);
   font-weight: 300;
   font-style: italic;
+
+  p {
+    font-weight: bold;
+    text-align: end;
+  }
 }
 
 .cta {
@@ -152,4 +157,10 @@ header {
     font-size: 1.25rem;
   }
 }
-padding: 5rem;
+
+footer {
+  padding: 2rem;
+  color: #eee;
+  background-color: var(--dark-bg);
+  text-align: center;
+}
